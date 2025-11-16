@@ -1,4 +1,4 @@
-* {
+* {* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -70,7 +70,7 @@ section {
 .project-card {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     padding: 15px;
     transition: transform 0.3s;
 }
@@ -82,29 +82,39 @@ section {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;                    /* jarak antar foto */
+    gap: 20px;
+    /* jarak antar foto */
     padding: 20px;
 }
 
 .gallery-grid img {
     width: 100%;
-    height: 500px;                /* tinggi seragam */
-    object-fit: cover;            /* memotong gambar agar rapi */
-    border-radius: 15px;          /* sudut membulat */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    height: 500px;
+    /* tinggi seragam */
+    object-fit: cover;
+    /* memotong gambar agar rapi */
+    border-radius: 15px;
+    /* sudut membulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
 .gallery-grid img:hover {
-    transform: scale(1.03);       /* efek hover halus */
+    transform: scale(1.03);
+    /* efek hover halus */
 }
-.project-card img{
-   width: 80%;
-    height: 500px;                /* tinggi seragam */
-    object-fit: cover;            /* memotong gambar agar rapi */
-    border-radius: 15px;          /* sudut membulat */
+
+.project-card img {
+    width: 80%;
+    height: 500px;
+    /* tinggi seragam */
+    object-fit: cover;
+    /* memotong gambar agar rapi */
+    border-radius: 15px;
+    /* sudut membulat */
 
 }
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -140,9 +150,11 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
 .cv {
     background-color: #301b00d4;
 }
+
 /* Tombol media sosial */
 .social-links {
     display: flex;
@@ -178,19 +190,25 @@ footer {
 .github {
     background-color: #333;
 }
+
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px; /* jarak antara logo dan teks */
+    gap: 10px;
+    /* jarak antara logo dan teks */
     font-size: 1.5rem;
     font-weight: bold;
 }
 
 .logo-img {
-    width:70px;      /* ukuran logo */
-    height: 60px;     /* pastikan proporsional */
-    object-fit: cover; /* memastikan logo tidak gepeng */
+    width: 70px;
+    /* ukuran logo */
+    height: 60px;
+    /* pastikan proporsional */
+    object-fit: cover;
+    /* memastikan logo tidak gepeng */
 }
+
 /* Kartu profil utama */
 .profile-card {
     background: rgb(255, 255, 255);
@@ -199,7 +217,7 @@ footer {
     height: 650px;
     margin: 80px auto;
     padding: 60px 40px;
-    border-radius:60px;
+    border-radius: 60px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     color: #5a3d00;
@@ -242,34 +260,44 @@ footer {
     margin-top: 20px;
     color: #b46b00;
 }
+
 .logo a {
-    text-decoration: none;   /* hilangkan garis bawah */
-    color: inherit;          /* ikuti warna teks parent (logo) */
+    text-decoration: none;
+    /* hilangkan garis bawah */
+    color: inherit;
+    /* ikuti warna teks parent (logo) */
     display: inline-block;
 }
 
 .logo a:hover {
-    opacity: 0.85;           /* efek hover halus */
+    opacity: 0.85;
+    /* efek hover halus */
     cursor: pointer;
 }
-header, .site-header {
+
+header,
+.site-header {
     position: sticky;
     top: 0;
     z-index: 1000;
 
-    background: rgba(106, 46, 0, 0.613); /* transparan */
-    backdrop-filter: blur(10px);           /* efek blur */
-    -webkit-backdrop-filter: blur(10px);   /* untuk Safari */
+    background: rgba(106, 46, 0, 0.613);
+    /* transparan */
+    backdrop-filter: blur(10px);
+    /* efek blur */
+    -webkit-backdrop-filter: blur(10px);
+    /* untuk Safari */
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    
+
     padding: 18px 32px;
 }
+
 /* Lightbox background */
 .lightbox {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,7 +315,7 @@ header, .site-header {
     max-width: 90%;
     max-height: 90%;
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 /* Lightbox aktif */
@@ -295,11 +323,12 @@ header, .site-header {
     visibility: visible;
     opacity: 1;
 }
+
 /* Background popup */
 .popup {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -320,7 +349,7 @@ header, .site-header {
     padding: 40px 30px;
     border-radius: 40px 40px 0 0;
 
-    box-shadow: 0 -6px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
 
     transform: translateY(100%);
@@ -364,11 +393,24 @@ header, .site-header {
     text-decoration: underline;
     text-decoration-color: #c07a07;
 }
+
 .about-click:hover {
     opacity: 0.7;
 }
+
 html {
-  scroll-behavior: smooth;
-  /* Jika header sticky menutupi target, atur scroll padding */
-  scroll-padding-top: 80px; /* sesuaikan dengan tinggi header / navbar-mu */
+    scroll-behavior: smooth;
+    /* Jika header sticky menutupi target, atur scroll padding */
+    scroll-padding-top: 80px;
+    /* sesuaikan dengan tinggi header / navbar-mu */
+}
+body {
+    background-image: url("background.jpg"); /* ganti dengan nama file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* <-- ini membuat gambar diam */
+}
+
+
 }
