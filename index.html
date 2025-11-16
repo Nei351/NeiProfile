@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pribadi Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="Screenshot_2025-11-13_220216-removebg-preview.png">
+   
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">
+    <a href="#home">Nei</a>
+            </h1>
+
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#education">Pendidikan</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Beranda -->
+        <section id="home" class="profile-card">
+    </div>
+    <img src="IMG_20240621_113609_163.jpg" alt="Foto Diri" class="profile-img" onclick="openImage(this.src)">
+    <h2>Halo, saya Faren</h2>
+    <p>Selamat datang di website pribadi saya.</p>
+    <hr id="about">
+    <h2 id="aboutBtn" class="about-click">Tentang Saya</h2>
+    <div class="social-links"><a href="CV_M_Faren.pdf" class="social-btn cv">Download CV</a></div>
+    
+
+<!-- POPUP SLIDE-UP -->
+<div id="aboutPopup" class="popup">
+    <div class="popup-content">
+
+        <img src="tomosaki (@photono_gen) · Instagram 照片和视频.jpg" alt="Foto Saya" class="popup-photo">
+
+        <h2>Tentang Saya</h2>
+
+        <p>
+            Memiliki nama lengkap M. Faren Al Muflih IB Matong dan seringkali disapa Faren, merupakan seorang pelajar di MAN IC GOWA yang saat ini menduduki kelas XI. Meskipun namanya jarang terdengar di aula Hall Of Fame, pria satu ini uniknya merupakan salah satu siswa rata-rata di bidang akademik dan prestasinya <br>
+            Meskipun demikian, saya punya minat yang tinggi dalam menyelesaikan permasalahan yang bersangkutan dengan logika dan punya rasa ingin tahu yang besar terhadap hal-hal mengenai ekonomi dan bisnis. Saya juga tidak membenci sebuah mata pelajaran secara khusus karena dapat beradaptasi dengan mudah di tiap tiap mata pelajaran <br>
+            Saya memiliki Motto "Keberuntungan akan datang kepada mereka yang layak untuk mendapatkannya, jika aku sedang sial maka akulah yang harus berubah"
+        </p>
+
+        <button onclick="closeAbout()" class="close-btn">Tutup</button>
+    </div>
+</div>
+</section>
+ <section id="education" class="History-section">
+            <h2>Riwayat Pendidikan</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Sekolah</h3>
+                    <p>TK Sandhy Putra 2013-2015 <br>
+                        SD Telkom Makassar 2015-2019 <br>
+                       SDIT Wihdatul Ummah 2019-2021 <br>
+                       Pondok Pesantren Villa Tahfizh Himmatul Qur'an Malino 2021-2024 <br>
+                       MAN IC Gowa 2024-sekarang
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h3>Prestasi</h3>
+                    <p>Juara Harapan 3 Lomba Melukis Tingkat-TK <br>
+                    [Prestasi disembunyikan] <br>
+                    [Prestasi disembunyikan] <br>
+                    [Prestasi disembunyikan] <br>
+                    [Prestasi disembunyikan] <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Proyek / Karya -->
+        <section id="projects" class="projects-section">
+            <h2>Proyek / Karya</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="Screenshot 2024-03-27 175954.png" alt="Proyek 1">
+                    <h3>Typography</h3>
+                    <p>Hasil karya Typography dengan menggunakan aplikasi Corel Draw</p>
+                </div>
+                <div class="project-card">
+                    <img src="T3_07_APLIKASI PENDAFTARAN EKSTRAKURIKULER.jpg" alt="Proyek 2">
+                    <h3>Diagram Alur Use Case</h3>
+                    <p>Merupakan salah satu hasil dari diagram yang dibuat di mapel informatika</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeri -->
+        <section id="gallery" class="gallery-section">
+            <h2>Galeri</h2>
+            <div class="gallery-grid">
+                <img src="IMG-20241009-WA0128.jpg" alt="Gambar 1" onclick="openImage(this.src)">
+                <img src="IMG_20251004_195538_547.jpg" alt="Gambar 2" onclick="openImage(this.src)">
+                <img src="IMG_20250410_130204_161.jpg" alt="Gambar 3" onclick="openImage(this.src)">
+                <img src="IMG_20250326_131015_835.jpg" alt="Gambar 4" onclick="openImage(this.src)">
+                <img src="IMG_20241010_205432_094.jpg" alt="Gambar 5" onclick="openImage(this.src)">
+            </div>
+        </section>
+        <!-- Popup lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeImage()">
+    <img id="lightbox-img">
+</div>
+
+        <!-- Kontak -->
+        <section id="contact" class="contact-section">
+    <h2>Kontak Saya</h2>
+    <p>Email: neraf.gaming@gmail.com</p>
+    <p>Media Sosial:</p>
+    <div class="social-links">
+        <a href="https://www.instagram.com/nnei_rav/" class="social-btn instagram">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100078944920866" class="social-btn linkedin">Facebook</a>
+        <a href="https://github.com/Nei351" class="social-btn github">GitHub</a>
+    </div>
+
+    <form action="#" method="post" class="contact-form">
+        <input type="text" placeholder="Nama" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Pesan akan dikirimkan secara anonim..." required></textarea>
+        <button type="submit">Kirim</button>
+    </form>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Faren. Semua Hak Dilindungi.</p>
+    </footer>
+ <script>
+ (function() {
+  // Cari header (ubah selector jika class/element-mu berbeda)
+  const header = document.querySelector('header') || document.querySelector('.site-header');
+  function getHeaderHeight() {
+    if (!header) return 0;
+    // gunakan bounding rect (termasuk transform/scale)
+    return Math.ceil(header.getBoundingClientRect().height);
+  }
+
+  // Tangani klik semua internal anchor
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      // biarkan link normal jika bukan anchor (mis. href="#" atau href="#!" tanpa id)
+      if (!targetId || targetId === '#' || targetId === '#!') return;
+      const targetEl = document.querySelector(targetId);
+      if (!targetEl) return; // kalau id tidak ditemukan, jangan ganggu
+
+      e.preventDefault();
+
+      const headerHeight = getHeaderHeight();
+      // Hitung posisi target - kompensasi header + margin kecil
+      const targetRect = targetEl.getBoundingClientRect();
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const targetY = Math.round(targetRect.top + scrollTop - headerHeight - 12);
+
+      // Scroll halus ke posisi itu
+      window.scrollTo({
+        top: targetY,
+        behavior: 'smooth'
+      });
+
+      // Setelah scroll, beri fokus pada elemen agar aksesibilitas bagus
+      // (tunda sedikit supaya scroll selesai / sedang berjalan)
+      setTimeout(() => {
+        targetEl.setAttribute('tabindex', '-1');
+        targetEl.focus({ preventScroll: true });
+      }, 600);
+    });
+  });
+})();       
+
+function openImage(src) {
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").classList.add("active");
+}
+
+function closeImage() {
+    document.getElementById("lightbox").classList.remove("active");
+}
+const aboutBtn = document.getElementById('aboutBtn');
+const aboutPopup = document.getElementById('aboutPopup');
+
+aboutBtn.onclick = function() {
+    aboutPopup.classList.add('active');
+}
+
+function closeAbout() {
+    aboutPopup.classList.remove('active');
+}
+
+// Klik area gelap = tutup popup
+aboutPopup.addEventListener("click", function(e) {
+    if (e.target === aboutPopup) {
+        aboutPopup.classList.remove("active");
+    }
+});
+</script>
+
+</body>
+</html>
