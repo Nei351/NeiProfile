@@ -1,4 +1,4 @@
-* {* {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,6 +48,27 @@ section {
     text-align: center;
 }
 
+.History-section {
+    margin: 1%;
+    border-radius: 2%;
+}
+.projects-section {
+    margin: 1%;
+    border-radius: 2%;
+}
+.gallery-section {
+    margin: 1%;
+    border-radius: 2%;
+}
+.contact-section {
+    margin: 1%;
+    border-radius: 2%;
+}
+.History-section {
+    margin: 1%;
+    border-radius: 2%;
+}
+
 .home-section {
     display: flex;
     flex-direction: column;
@@ -73,6 +94,7 @@ section {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     padding: 15px;
     transition: transform 0.3s;
+    font-size: large;
 }
 
 .project-card:hover {
@@ -125,12 +147,16 @@ section {
 
 .contact-form input,
 .contact-form textarea {
+    margin-left: -20%;
+    margin-right: -20%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
 }
 
 .contact-form button {
+    margin-left: -20%;
+    margin-right: -20%;
     padding: 10px;
     background-color: #1abc9c;
     color: white;
@@ -248,6 +274,7 @@ footer {
     border: 1px solid #b46b00;
     opacity: 0.4;
 }
+
 
 /* Judul di dalam kartu */
 .profile-card h2 {
@@ -411,6 +438,54 @@ body {
     background-position: center;
     background-attachment: fixed; /* <-- ini membuat gambar diam */
 }
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  display: none; /* Sembunyikan awalnya */
+  z-index: 200;
+}
 
+.back-to-top:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
 
+.back-to-top:active {
+  transform: translateY(0);
+}
+section {
+    min-height: 100vh;   /* tinggi minimum satu layar */
+}
+.profile-card {
+    background: #ffcbab;
+}
+
+.about {
+    background: #fff4dc;
+}
+.History-section {
+    background: #fff4dc;
+
+}
+.projects-section {
+    background: #eee3cd;
+}
+.gallery-section {
+    background: #fafafa;
+}
+
+.contact-section {
+    background: #f2f2f2;
 }
