@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Pribadi Saya</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Favicon.png" >
+    <link rel="icon" type="image/png" href="Favicon.png" >
 
 </head>
 
@@ -59,7 +59,7 @@
                         ekonomi dan bisnis. Saya juga tidak membenci sebuah mata pelajaran secara khusus karena dapat
                         beradaptasi dengan mudah di tiap tiap mata pelajaran <br>
                         Saya memiliki Motto "Keberuntungan akan datang kepada mereka yang layak untuk mendapatkannya,
-                        jika aku sedang sial maka akulah yang harus berubah"
+                        jika aku sedang sial maka aku harus berubah"
                     </p>
 
                     <button onclick="closeAbout()" class="close-btn">Tutup</button>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="project-card">
                     <h3>Prestasi</h3>
-                    <p>Juara Harapan 3 Lomba Melukis Tingkat-TK <br>
+                    <p>Juara Harapan 2 Lomba Melukis Tingkat-TK <br>
                         [Prestasi disembunyikan] <br>
                         [Prestasi disembunyikan] <br>
                         [Prestasi disembunyikan] <br>
@@ -96,12 +96,12 @@
             <h2>Proyek / Karya</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <img src="Screenshot 2024-03-27 175954.png" alt="Proyek 1">
+                    <img src="Screenshot 2024-03-27 175954.png" alt="Proyek 1" onclick="openImage(this.src)">
                     <h3>Typography</h3>
                     <p>Hasil karya Typography dengan menggunakan aplikasi Corel Draw</p>
                 </div>
                 <div class="project-card">
-                    <img src="T3_07_APLIKASI PENDAFTARAN EKSTRAKURIKULER.jpg" alt="Proyek 2">
+                    <img src="T3_07_APLIKASI PENDAFTARAN EKSTRAKURIKULER.jpg" alt="Proyek 2" onclick="openImage(this.src)">
                     <h3>Diagram Alur Use Case</h3>
                     <p>Merupakan salah satu hasil dari diagram yang dibuat di mapel informatika</p>
                 </div>
@@ -143,7 +143,7 @@
                 <button type="submit">Kirim</button>
             </form>
         </section>
-
+        <button id="backToTopBtn" class="back-to-top">↑</button>
     </main>
 
     <footer>
@@ -222,5 +222,3 @@
 </body>
 
 </html>
-
-
