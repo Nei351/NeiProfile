@@ -7,13 +7,13 @@
 }
 
 body {
-    color: #8f5d00;
+    color: #ea9800;
     background-color: #f9f9f9;
 }
 
 header {
     background-color: #b65500;
-    color: white;
+    color:#ff9f4a ;
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
@@ -240,7 +240,7 @@ footer {
     background: rgb(255, 255, 255);
     width: 70%;
     max-width: 1100px;
-    height: 650px;
+    height: 350px;
     margin: 80px auto;
     padding: 60px 40px;
     border-radius: 60px;
@@ -269,8 +269,8 @@ footer {
 
 /* Garis pemisah */
 .profile-card hr {
-    margin: 20px auto;
-    width: 60%;
+    margin: 30px auto;
+    width: 100%;
     border: 1px solid #b46b00;
     opacity: 0.4;
 }
@@ -476,16 +476,134 @@ section {
     background: #fff4dc;
 }
 .History-section {
-    background: #fff4dc;
+    background: #ffe7b2;
 
 }
 .projects-section {
-    background: #eee3cd;
+    background: #ffefcf;
 }
 .gallery-section {
-    background: #fafafa;
+    background: hsl(38, 100%, 94%);
 }
 
 .contact-section {
     background: #f2f2f2;
+    background-image: url("Screenshot 2025-11-18 095248.png");
+    background-size: cover;
+    background-blend-mode: luminosity;
+}
+.education-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;              /* jarak antar kolom */
+    width: 100%;
+    padding: 20px 0;
+    flex-wrap: wrap;        /* agar responsif di HP */
+}
+
+.education-box {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    width: 42%;             /* seimbang kiri & kanan */
+    min-width: 300px;       /* agar tidak terlalu kecil di HP */
+    text-align: center;
+    box-sizing: border-box;
+
+    /* bayangan lembut */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.education-box h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #b1720b;
+}
+
+.education-box p {
+    margin: 6px 0;          /* jarak antar baris konsisten */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #8b5a10;
+}
+.education-box h3 {
+    text-align: center;
+}
+
+.education-box p {
+    text-align: left;
+}
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.profile-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-right {
+    flex: 1.2;
+    text-align: left;      /* teks rata kiri */
+}
+
+.profile-img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #b1720b;
+    cursor: pointer;
+}
+
+.profile-right h2 {
+    font-size: 34px;
+    color: #b1720b;
+    margin-bottom: 10px;
+}
+
+.profile-right p {
+    color: #4b3a21;
+    font-size: 17px;
+}
+
+.profile-line {
+    margin: 20px 0;
+    border: 0;
+    height: 2px;
+    width: 80%;
+    background-color: #b1720b;
+}
+
+.about-click {
+    font-size: 22px;
+    font-weight: bold;
+    color: #b1720b;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.cv-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 22px;
+    background-color: #3a2b18;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.cv-btn:hover {
+    background-color: #2b2115;
 }
